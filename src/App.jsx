@@ -15,6 +15,7 @@ export default function App() {
     return day === 0 || day === 6;
   };
   return (
+    <>
     <LocalizationProvider dateAdapter={AdapterDayjs}
     adapterLocale={locale}
     >
@@ -29,8 +30,9 @@ export default function App() {
       }}
       renderInput={(params) => <TextField {...params} />}
     />
-    <button >VER DATA</button>
   </LocalizationProvider>
+    <button >VER DATA</button>
+    </>
   )
 }
 
