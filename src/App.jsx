@@ -17,7 +17,6 @@ export default function App() {
   return (
     <>
     <LocalizationProvider dateAdapter={AdapterDayjs}
-    adapterLocale={locale}
     >
     <DatePicker
       disablePast
