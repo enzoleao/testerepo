@@ -21,13 +21,15 @@ export default function App() {
     <DatePicker
       disablePast
       shouldDisableDate={isWeekend}
+      inputFormat="DD-MM-YYYY"
       label="Basic example"
       value={value}
       onChange={(newValue) => {
-        setValue(newValue);
+        setValue(newValue.format("MM-DD-YYYY").toString());
       }}
       renderInput={(params) => <TextField {...params} />}
     />
+    <button onClick={console.log(value)}>VER DATA</button>
   </LocalizationProvider>
   )
 }
