@@ -19,8 +19,7 @@ export default function App() {
     <LocalizationProvider dateAdapter={AdapterDayjs}
     >
     <DatePicker
-      
-      inputFormat="DD-MM-YYYY"
+    
       label="Basic example"
       value={value}
       onChange={(newValue) => {
