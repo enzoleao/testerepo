@@ -26,7 +26,8 @@ export default function App() {
       inputFormat="DD-MM-YYYY"
       value={value}
       onChange={(newValue) => {
-        setValue(newValue.format("DD-MM-YYYY"));
+        const test = newValue.format("MM-DD-YYYY")
+        setValue(test);
       }}
       renderInput={(params) => <TextField {...params} />}
     />
