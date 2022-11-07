@@ -20,7 +20,6 @@ export default function App() {
     >
     <DatePicker
       
-      shouldDisableDate={isWeekend}
       inputFormat="DD-MM-YYYY"
       label="Basic example"
       value={value}
