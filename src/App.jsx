@@ -29,7 +29,7 @@ export default function App() {
       }}
       renderInput={(params) => <TextField {...params} />}
     />
-    <button onClick={console.log(value)}>VER DATA</button>
+    <button >VER DATA</button>
   </LocalizationProvider>
   )
 }
