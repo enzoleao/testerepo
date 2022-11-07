@@ -31,7 +31,7 @@ export default function App() {
       renderInput={(params) => <TextField {...params} />}
     />
   </LocalizationProvider>
-    <button >VER DATA</button>
+   
     </>
   )
 }
