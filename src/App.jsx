@@ -19,7 +19,7 @@ export default function App() {
     <LocalizationProvider dateAdapter={AdapterDayjs}
     >
     <DatePicker
-      disablePast
+      
       shouldDisableDate={isWeekend}
       inputFormat="DD-MM-YYYY"
       label="Basic example"
