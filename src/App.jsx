@@ -23,14 +23,15 @@ export default function App() {
       disablePast
       shouldDisableDate={isWeekend}
       label="Basic example"
+      inputFormat="DD-MM-YYYY"
       value={value}
       onChange={(newValue) => {
-        setValue(newValue.toString());
+        setValue(newValue.format("DD-MM-YYYY"));
       }}
       renderInput={(params) => <TextField {...params} />}
     />
   </LocalizationProvider>
-      <button onClick={console.log(value)}></button>
+      <button onClick={console.log(value)}>teste</button>
     </>
   )
 }
