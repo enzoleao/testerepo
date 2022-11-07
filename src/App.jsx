@@ -17,9 +17,11 @@ export default function App() {
   return (
     <>
     <LocalizationProvider dateAdapter={AdapterDayjs}
+      adapterLocale={locale}
     >
     <DatePicker
-    
+      disablePast
+      shouldDisableDate={isWeekend}
       label="Basic example"
       value={value}
       onChange={(newValue) => {
@@ -28,7 +30,7 @@ export default function App() {
       renderInput={(params) => <TextField {...params} />}
     />
   </LocalizationProvider>
-   
+      <button onClick={console.log(value)}></button>
     </>
   )
 }
