@@ -23,7 +23,7 @@ export default function App() {
       label="Basic example"
       value={value}
       onChange={(newValue) => {
-        setValue(newValue.format("MM-DD-YYYY").toString());
+        setValue(newValue.toString());
       }}
       renderInput={(params) => <TextField {...params} />}
     />
